@@ -20,9 +20,9 @@ package main
 // 1 hryvnia is 100 kopiikas - https://bank.gov.ua/en/uah/obig-coin#10_2016
 // but in Wikipwdia kopek or kopeck. I used the term of the National Bank of Ukraine
 const (
-	priceApple int = 599
-	pricePear  int = 700
-	money      int = 2300
+	priceApple int = 599  // Ціна 1 яблука, копійок
+	pricePear  int = 700  // Ціна 1 груші, копійок
+	money      int = 2300 // Наші гроші, в копійках
 )
 
 // main - main func
