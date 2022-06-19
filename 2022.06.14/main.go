@@ -28,10 +28,14 @@ const (
 // main - main func
 func main() {
 	// 1 пункт завдання
+	var (
+		amountApple int = 9
+		amountPear  int = 8
+	)
 	println("1. Скільки грошей треба витратити, щоб купити 9 яблук та 8 груш?")
-	println("\tЩоб купити 9 яблук нам треба мати:", 9*priceApple/100, "грн")
-	println("\tЩоб купити 8 груш нам треба мати:", 8*pricePear/100, "грн")
-	println("\tщоб купити 9 яблук та 8 груш разом:", (9*priceApple+8*pricePear)/100, "грн")
+	println("\tЩоб купити 9 яблук нам треба мати:", amountApple*priceApple/100, "грн")
+	println("\tЩоб купити 8 груш нам треба мати:", amountPear*pricePear/100, "грн")
+	println("\tщоб купити 9 яблук та 8 груш разом:", (amountApple*priceApple+amountPear*pricePear)/100, "грн")
 	// 2 пункт завдання
 	println("\n2. Скільки груш ми можемо купити?")
 	println("\tМи можемо купити", money/pricePear, "груш(и)")
@@ -39,6 +43,13 @@ func main() {
 	println("\n3. Скільки яблук ми можемо купити?")
 	println("\tМи можемо купити", money/priceApple, "яблук(а)")
 	// 4 пункт завдання
+	amountApple = 2
+	amountPear = 2
 	println("\n4. Чи ми можемо купити 2 груші та 2 яблука?")
-	if ()
+	if priceApple*amountApple+pricePear*amountPear <= money {
+		println("\tТак, зможемо :)")
+	} else {
+		println("\tНі, не зможемо :(")
+	}
+	// println("\n4. Чи ми можемо купити 2 груші та 2 яблука?", priceApple*amountApple+pricePear*amountPear <= money)
 }
