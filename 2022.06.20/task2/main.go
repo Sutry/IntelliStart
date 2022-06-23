@@ -47,7 +47,6 @@ func main() {
 	for i := 0; i < len(arrInput); i++ {
 		iInt, _ = strconv.Atoi(arrInput[i])
 		iInt32 = int32(iInt)
-		println(iInt, " ", iInt32)
 		//if arrInput[i] > max {
 		//			max = arrInput[i]
 		if iInt32 > max {
