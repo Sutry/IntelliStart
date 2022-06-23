@@ -29,7 +29,7 @@ import (
 // For obtain string with max & min values (or one only) from variable 'input'
 func main() {
 
-	var input string = "1 9 3 4 -5"
+	var input string = "1 2 3 4 5"
 	arrInput := strings.Split(input, " ")
 
 	var (
@@ -40,9 +40,14 @@ func main() {
 		result string
 	)
 
+	iInt, _ = strconv.Atoi(arrInput[0])
+	min = int32(iInt)
+	max = min
+
 	for i := 0; i < len(arrInput); i++ {
 		iInt, _ = strconv.Atoi(arrInput[i])
 		iInt32 = int32(iInt)
+		println(iInt, " ", iInt32)
 		//if arrInput[i] > max {
 		//			max = arrInput[i]
 		if iInt32 > max {
